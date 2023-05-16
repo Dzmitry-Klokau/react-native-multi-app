@@ -3,7 +3,7 @@
 ## 1. Initialize workspace
 
 ```bash
-npx create-nx-workspace@latest --packageManager=yarn --nxCloud=false
+npx create-nx-workspace@latest --preset=react-native --packageManager=yarn --nxCloud=false --skipGit=true
 ```
 
 | Q                                                    | A                      |
@@ -50,11 +50,13 @@ Now, we can use this component in our apps by:
 `import { Button } from '@react-native-multi-app/ui-components';`
 
 ## 4. Run apps
+
 ```
 cd apps/multi-app2/ios && pod install --repo-update && cd -
 ```
+
 ```
-npx nx run multi-app2:run-ios
+npx nx run learn2:run-ios
 ```
 
 # About Nx
